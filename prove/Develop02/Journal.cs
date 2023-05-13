@@ -4,7 +4,6 @@ namespace DailyJournal
 {
     class Journal
     {
-    
         public List<Entry> entries;
 
         public Journal()
