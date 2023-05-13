@@ -8,7 +8,6 @@ namespace DailyJournal
         {
             Journal journal = new Journal();
 
-            // List of prompts
             List<string> prompts = new List<string>
             {
                 "Did anything unexpected happen today that surprised you? ",
@@ -40,7 +39,7 @@ namespace DailyJournal
                 Console.WriteLine("4. Load");
                 Console.WriteLine("5. Quit");
 
-                Console.Write("\nWhat would you like to do? ");
+                Console.WriteLine("\nWhat would you like to do? ");
                 string choice = Console.ReadLine();
 
                 switch (choice)

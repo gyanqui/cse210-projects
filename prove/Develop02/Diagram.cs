@@ -1,5 +1,6 @@
 /*
-Program Diagram 
+                        Program Diagram 
+
                         +-----------------+
                         |     Program     |
                         +-----------------+
@@ -17,15 +18,15 @@ Program Diagram
                 |                       | | -response: str |
                 | +get_prompt(): str    | | -date: str     |
                 +-----------------------+ +----------------+
-                                        |
+                                        |                       
                                         |
                         +-------------+-------------------+
                         |             |                   |
-                +---------+-----+ +-----+---------+     +------------+
-                |   SaveToFile  | |  LoadFromFile |     |  Display   |
-                +----------------+ +----------------+   +-------------------------+
-                | -filename: str | | -filename: str |   | -journal: list of Entry |
-                |                | |                |   |                         |
-                | +save(): None  | | +load(): None  |   | +display(): None        |
-                +----------------+ +----------------+   +-------------------------+     
+        +---------+-----+ +-----+---------+     +------------+
+        |   SaveToFile  | |  LoadFromFile |     |  Display   |
+        +----------------+ +----------------+   +-------------------------+
+        | -filename: str | | -filename: str |   | -journal: list of Entry |
+        |                | |                |   |                         |
+        | +save(): None  | | +load(): None  |   | +display(): None        |
+        +----------------+ +----------------+   +-------------------------+     
 */
