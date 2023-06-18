@@ -1,43 +1,34 @@
 using System;
-using System.Collections.Generic;
-using System.Threading;
-//Derive class
 public class BreathingActivity : Activity
-{
-    public BreathingActivity() :base(" Breathing Activity","This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing. ") 
+{  
+    public BreathingActivity()
     {
-    
+        SetName("Breathing Activity");
+        SetDescription("This activity will help you relax by walking through your breathing in and out slowly. Clear your mind and focus on your breathing.");
     }
-
-    public override void Start()
+    public void PromptBreathing()
     {
-        Console.WriteLine($" Starting {name} ...");
-        Console.WriteLine(description);
-        SetDuration();
-        Console.WriteLine("Prepare to begin ...");
-        Pause(3);
-        PerformActivity();
-        Console.WriteLine("Good job");
-        Console.WriteLine($"You have completed {name} for {duration} seconds.");
-        Pause(3);
-    }
-    private void PerformActivity()
-    {
-        Console.WriteLine("Let's start breathing...");
+        DateTime futureTime = GetFutureTime(GetDuration());
+        DateTime currentTime = GetCurrentTime();
+        
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.Write("Breathe in...");
+        GenerateCountdownTimer(2);
+        Console.WriteLine();
+        Console.Write("Breathe out...");
+        GenerateCountdownTimer(3);
 
-        for (int i = 0; i < duration; i+= 2)
+        while (currentTime <= futureTime)
         {
-            Console.WriteLine("Breathe in ...");
-            Pause(2);
-            Console.WriteLine("Breathe out...");
-            Pause(2);
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("Breathe in...");
+            GenerateCountdownTimer(4);
+            Console.WriteLine();
+            Console.Write("Breathe out...");
+            GenerateCountdownTimer(6);
+            currentTime = DateTime.Now;
         }
     }
-
-
-
 }
-
-
-
-    
