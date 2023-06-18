@@ -51,13 +51,6 @@ public class ListingActivity:Activity
 
             remainingSeconds -= 10;
         }
-
         Console.WriteLine($"You listed {itemCount} items.");
-
-
-
     }
-
-
-    
 }
