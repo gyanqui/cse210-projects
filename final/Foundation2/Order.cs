@@ -26,16 +26,13 @@ public class Order
     {
         double totalprice = 0;
 
-        // calculate price of products
         foreach (Product p in _products) {
             double price = p.CalculatePrice();
             totalprice += price;
         }
 
-        // calculate shipping cost
         double shippingCost = CalculateShipping();
 
-        // calculate total price with shipping cost
         totalprice += shippingCost;
 
         return totalprice;
@@ -43,7 +40,7 @@ public class Order
 
     public string GeneratePackingLabel()
     {
-        string packingLabel = "PACKING LABEL\n";
+        string packingLabel = "Packing Label\n";
 
         foreach (Product p in _products) {
             packingLabel += p.GetName() + " - " + p.GetProductID() + "\n";
@@ -54,7 +51,7 @@ public class Order
 
     public string GenerateShippingLabel()
     {
-        string shippingLabel = "SHIPPING LABEL\n";
+        string shippingLabel = "Shipping Label\n";
 
         shippingLabel += _customer.GetName() + "\n" + _customer.GenerateAddress();
         
@@ -63,13 +60,13 @@ public class Order
 
     public string GenerateTotalCost()
     {
-        string totalCost = "\nTOTAL COST:\n";
+        string totalCost = "\nTotal Cost:\n";
         double totalPrice = CalculateTotalPrice();
         foreach (Product p in _products) {
-            totalCost += p.GetName() + " (" + p.GetProductID() + ") - " + "$" + p.GetPrice() + " x " + p.GetQuantity() + " = " + p.CalculatePrice() + "\n";
+            totalCost += p.GetName() + " (" + p.GetProductID() + ") - " + "$" + p.GetPrice() + " x " + p.GetQuantity() + " = " + p.CalculatePrice() ;
         }
-        totalCost += "Shipping Cost: " + "$" + CalculateShipping() + "\n";
-        totalCost += "TOTAL COST: $" + CalculateTotalPrice();
+        totalCost += "Shipping Cost: " + "$" + CalculateShipping();
+        totalCost += "Total: $" + CalculateTotalPrice();
         
         return totalCost;
     }
@@ -83,6 +80,6 @@ public class Order
         Console.WriteLine(packingLabel);
         Console.WriteLine(shippingLabel);
         Console.WriteLine(totalCost);
-        Console.WriteLine("--------END OF ORDER---------");
+        Console.WriteLine("------- Order Completed --------");
     }
 }

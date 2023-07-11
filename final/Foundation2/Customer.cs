@@ -27,7 +27,6 @@ public class Customer
 
     public string GenerateAddress()
     {
-            // check
         string generatedAddress = _address.GenerateAddress();
         return generatedAddress;
     }

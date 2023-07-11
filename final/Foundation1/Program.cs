@@ -5,8 +5,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Abstraction");
-        Console.WriteLine();
 
         List<Video> videosList = new List<Video>();
 
