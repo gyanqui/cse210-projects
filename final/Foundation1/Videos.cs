@@ -29,7 +29,6 @@ public class Video
         Console.WriteLine();
         int commentCount = CountComments();
         Console.WriteLine($"Number of comments: {commentCount}");
-        Console.WriteLine("Comments:");
         foreach (Comment comment in _comments)
         {
             comment.DisplayInfo();

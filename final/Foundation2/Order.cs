@@ -11,14 +11,9 @@ public class Order
         _customer = customer;
     }
 
-    public double CalculateShipping()
+    public double CalculateShipping() 
     {
-        double shippingCost = 0;
-        if (_customer.isFromUSA() == true) {
-            shippingCost = 5;
-        } else {
-            shippingCost = 35;
-        }
+        double shippingCost = _customer.isFromUSA() ? 5 : 35;
         return shippingCost;
     }
 
@@ -26,46 +21,45 @@ public class Order
     {
         double totalprice = 0;
 
-        foreach (Product p in _products) {
+        // calculate price of products
+        foreach (Product p in _products) 
+        {
             double price = p.CalculatePrice();
             totalprice += price;
         }
 
+        // calculate shipping cost
         double shippingCost = CalculateShipping();
-
+        // calculate total price with shipping cost
         totalprice += shippingCost;
-
         return totalprice;
     }
 
     public string GeneratePackingLabel()
     {
-        string packingLabel = "Packing Label\n";
-
-        foreach (Product p in _products) {
+        string packingLabel = "Packing Label:\n";
+        foreach (Product p in _products) 
+        {
             packingLabel += p.GetName() + " - " + p.GetProductID() + "\n";
         }
-
         return packingLabel;
     }
 
     public string GenerateShippingLabel()
     {
-        string shippingLabel = "Shipping Label\n";
-
+        string shippingLabel = "Shipping Label:\n";
         shippingLabel += _customer.GetName() + "\n" + _customer.GenerateAddress();
-        
         return shippingLabel;
     }
 
     public string GenerateTotalCost()
     {
-        string totalCost = "\nTotal Cost:\n";
+        string totalCost = "\nProducts:\n";
         double totalPrice = CalculateTotalPrice();
         foreach (Product p in _products) {
-            totalCost += p.GetName() + " (" + p.GetProductID() + ") - " + "$" + p.GetPrice() + " x " + p.GetQuantity() + " = " + p.CalculatePrice() ;
+            totalCost += p.GetName() + " (" + p.GetProductID() + ") - " + "$" + p.GetPrice() + " x " + p.GetQuantity() + " = " + p.CalculatePrice() + "\n";
         }
-        totalCost += "Shipping Cost: " + "$" + CalculateShipping();
+        totalCost += "Shipping Cost: $" + CalculateShipping() + "\n";
         totalCost += "Total: $" + CalculateTotalPrice();
         
         return totalCost;
@@ -80,6 +74,5 @@ public class Order
         Console.WriteLine(packingLabel);
         Console.WriteLine(shippingLabel);
         Console.WriteLine(totalCost);
-        Console.WriteLine("------- Order Completed --------");
     }
 }
