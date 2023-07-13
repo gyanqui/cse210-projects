@@ -1,0 +1,7 @@
+Description of Foundation 1 program
+
+In developing the YouTube video program, I have applied the abstraction principle. By utilizing the Video and Comment classes,
+I have abstracted away unnecessary complexities and focused on the core attributes and functionalities. The Video class provides
+a simplified representation of a video, emphasizing details like the title, author, and length. Similarly, the Comment class
+encapsulates comment-related information, such as the commenter's name and text. This abstraction has improved the overall
+code by enhancing maintainability, readability, and emphasizing the essential aspects of the program's logic.

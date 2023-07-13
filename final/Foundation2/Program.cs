@@ -22,7 +22,7 @@ class Program
 
         Console.WriteLine("Order Number: 1");
         order1.DisplayResults();
-        Console.WriteLine("-------- Order Complete --------\n");
+        Console.WriteLine();
 
         // Order 2
         Address address2 = new Address("352 St", "Good Year", "AZ 85001", "USA");
@@ -41,7 +41,7 @@ class Program
 
         Console.WriteLine("Order Number: 2");
         order2.DisplayResults();
-        Console.WriteLine("-------- Order Complete --------\n");
+        Console.WriteLine();
 
         // Order 3
         Address address3 = new Address("2010 W 500 S", "Salt Lake", "UT 84104", "USA");
@@ -58,6 +58,6 @@ class Program
 
         Console.WriteLine("Order Number: 3");
         order3.DisplayResults();
-        Console.WriteLine("-------- Order Complete --------\n");
+        Console.WriteLine();
     }
 }

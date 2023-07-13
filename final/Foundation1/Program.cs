@@ -47,19 +47,6 @@ class Program
 
         videosList.Add(video3);
 
-        // Video 4
-        Video video4 = new Video("Exploring Peruvian Textile Art: Preserving Tradition and Culture", "Juan Perez Garcia", 5.25);
-
-        Comment video4Comment1 = new Comment("Valentina", "Peruvian textile craftsmanship is so beautiful. I appreciate the effort and talent of our artists.");
-        Comment video4Comment2 = new Comment("Andrés", "I love how you connect with local artisans. Their work is invaluable.");
-        Comment video4Comment3 = new Comment("Isabella", "The details in the textiles are stunning. Peruvian art is truly exceptional.");
-
-        video4.ListComment(video4Comment1);
-        video4.ListComment(video4Comment2);
-        video4.ListComment(video4Comment3);
-
-        videosList.Add(video4);
-
         foreach (Video video in videosList)
         {
             video.DisplayInfo();

@@ -1,0 +1,12 @@
+Description of Foundation 2 program
+
+In this project, I have implemented the encapsulation principle by creating separate classes for Product,
+Order, Customer, and Address. Each class encapsulates its own data and behavior, ensuring that the internal
+implementation details are hidden from other classes. The Product class encapsulates product details, such
+as the name, ID, price, and quantity, providing a clear and organized structure for managing product-related
+information. The Order class encapsulates the concept of an order, including a list of products and a customer,
+allowing for easy manipulation and calculation of total price and shipping cost. The Customer class encapsulates
+customer information, like the name and address, protecting the data and providing methods to access and manipulate
+it in a controlled manner. The Address class encapsulates address-related details, enabling the generation of full
+address strings and checking if the address is from the USA. This implementation of encapsulation improves code
+organization, data hiding, and separation of concerns, resulting in maintainable and reusable code.
