@@ -25,7 +25,7 @@ public class Video
     }
     public void DisplayInfo()
     {
-        Console.WriteLine($"Title: {_title} | Author: {_author} | Length: {_length} minutes");
+        Console.WriteLine($"Title: {_title} | Author: {_author} | Length: {_length} seconds");
         Console.WriteLine();
         int commentCount = CountComments();
         Console.WriteLine($"Number of comments: {commentCount}");
