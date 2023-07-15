@@ -14,11 +14,13 @@ public class Running : Exercise
     {
         return _distance;
     }
+
     public override double CalculateSpeed()
     {
         double speed = (_distance / _minutes) * 60;
         return speed;
     }
+
     public override double CalculatePace()
     {
         double pace = _minutes / _distance;

@@ -15,10 +15,12 @@ public class StationaryBicycles : Exercise
         double distance = _speed * _minutes / 60;
         return distance;
     }
+
     public override double CalculateSpeed()
     {
         return _speed;
     }
+
     public override double CalculatePace()
     {
         double pace = 60 / _speed;

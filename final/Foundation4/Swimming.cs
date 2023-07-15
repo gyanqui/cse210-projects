@@ -15,11 +15,13 @@ public class Swimming : Exercise
         double distance = _laps * 50 / 1000;
         return distance;
     }
+
     public override double CalculateSpeed()
     {
         double speed = CalculateDistance() / _minutes * 60;
         return speed;
     }
+
     public override double CalculatePace()
     {
         double pace = _minutes / CalculateDistance();
