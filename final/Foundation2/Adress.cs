@@ -17,11 +17,7 @@ public class Address
 
     public bool isUSA()
     {
-        if (_country == "USA") {
-            return true;
-        } else {
-            return false;
-        }
+        return _country == "USA" ? true : false;
     }
 
     public string GenerateAddress()

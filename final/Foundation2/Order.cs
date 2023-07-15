@@ -21,16 +21,13 @@ public class Order
     {
         double totalprice = 0;
 
-        // calculate price of products
         foreach (Product p in _products) 
         {
             double price = p.CalculatePrice();
             totalprice += price;
         }
 
-        // calculate shipping cost
         double shippingCost = CalculateShipping();
-        // calculate total price with shipping cost
         totalprice += shippingCost;
         return totalprice;
     }
@@ -56,9 +53,11 @@ public class Order
     {
         string totalCost = "\nProducts:\n";
         double totalPrice = CalculateTotalPrice();
-        foreach (Product p in _products) {
+        foreach (Product p in _products) 
+        {
             totalCost += p.GetName() + " (" + p.GetProductID() + ") - " + "$" + p.GetPrice() + " x " + p.GetQuantity() + " = " + p.CalculatePrice() + "\n";
         }
+        
         totalCost += "Shipping Cost: $" + CalculateShipping() + "\n";
         totalCost += "Total: $" + CalculateTotalPrice();
         

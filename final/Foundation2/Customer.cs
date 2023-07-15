@@ -13,11 +13,7 @@ public class Customer
 
     public bool isFromUSA()
     {
-        if (_address.isUSA() == true) {
-            return true;
-        } else {
-            return false;
-        }
+        return _address.isUSA() ? true : false;
     }
     
     public string GetName()
@@ -27,7 +23,6 @@ public class Customer
 
     public string GenerateAddress()
     {
-            // check
         string generatedAddress = _address.GenerateAddress();
         return generatedAddress;
     }
