@@ -28,10 +28,4 @@ To begin working on a specific project, navigate to the corresponding directory 
 
 This repository serves as a starting point for students' coursework and assignments in the CSE 210 course. It is essential to avoid directly modifying the contents of this repository, as it serves as a reference for all students. Instead, students can create a fork of this repository and use it as their personal workspace to develop their projects.
 
-## Feedback and Support
-
-If students encounter any issues, have questions, or need assistance with the assignments, they are encouraged to seek help from the instructor or their fellow classmates. Success and a positive learning experience are important, and collaboration and discussion can greatly contribute to a supportive learning environment.
-
-Students are also welcome to provide feedback on the course materials or assignments, as their input is valuable in improving the overall learning experience for all participants. Active participation and engagement in discussions can benefit not only individual students but also the entire class.
-
-Remember, we are all here to support each other's learning journey. So, don't hesitate to ask for help or offer assistance when possible. Together, we can create a positive and constructive learning community. Happy coding, and best of luck with the projects!
+##Happy coding!
