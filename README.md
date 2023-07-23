@@ -1,10 +1,12 @@
-# CSE 210 Repository
+# Repository Name: CSE 210-Projects
 
-![Student](https://img.shields.io/badge/Student-Your%20Name-blue)
+## CSE 210 Python Projects
 
-## Welcome to the CSE 121B Repository!
+This repository contains my coursework, assignments, and projects for the CSE 210 course, where we delve into the principles of programming with classes using C#. Throughout this course, we will explore the concepts of classes, objects, encapsulation, inheritance, and polymorphism in the context of software development.
 
-This repository serves as the central hub for all projects completed during the CSE 121B course. It is organized into the following folders:
+### Course Overview
+
+CSE 210 introduces the fundamental concepts of programming with classes. We will learn how to design software using class-based principles, enabling us to create flexible, maintainable, and cost-effective software solutions. The primary programming language used in this course is C#, and you are not expected to have prior experience with C#. Instead, we will build upon your understanding of programming principles gained in CSE 111: Programming with Functions.
 
 1. **sandbox**: An empty project where you can experiment and practice various programming concepts related to the course. Use this space to explore new ideas and build your coding skills.
 
