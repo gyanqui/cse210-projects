@@ -1,8 +1,8 @@
-# CSE 210-Projects Repository
+# Repository Name: CSE 210 Projects
 
-## Welcome to the CSE 210-Projects repository!
+## CSE 210 Python Projects
 
-This repository contains my coursework, assignments, and projects for the CSE 210 course, where we delve into the principles of programming with classes using C#. Throughout this course, we will explore the concepts of classes, objects, encapsulation, inheritance, and polymorphism in the context of software development.
+Welcome to the CSE 210 Python Projects Repository! This repository contains my coursework, assignments, and projects for the CSE 210 course, where we delve into the principles of programming with classes using C#. Throughout this course, we will explore the concepts of classes, objects, encapsulation, inheritance, and polymorphism in the context of software development.
 
 ### Course Overview
 
