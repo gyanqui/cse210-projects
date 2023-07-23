@@ -28,4 +28,4 @@ To begin working on a specific project, navigate to the corresponding directory 
 
 This repository serves as a starting point for students' coursework and assignments in the CSE 210 course. It is essential to avoid directly modifying the contents of this repository, as it serves as a reference for all students. Instead, students can create a fork of this repository and use it as their personal workspace to develop their projects.
 
-##Happy coding!
+Happy coding!
